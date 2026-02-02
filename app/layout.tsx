@@ -17,9 +17,10 @@ function LayoutContent({ children }: { children: React.ReactNode }) {
   return (
     <>
           {!loading && <Header header={header} />}
-          {!loading && <Navigation page={page} />}
+          
           {!loading && shouldShowCarousel && <Carousel page={page} />}
           {children}
+          {!loading && <Navigation page={page} />}
           {!loading && <Footer footer={footer} currentPath={pathname} />}
     </>
   );

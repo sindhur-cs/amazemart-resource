@@ -17,21 +17,20 @@ export default function Header({ header }: HeaderProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 gap-4">
           <div className="flex items-center flex-shrink-0">
-            <Link href="/" className="flex items-center space-x-3">
+            <Link href="/" className="flex flex-col items-start gap-0">
               {header?.contentstack_logo?.url ? (
                 <Image
                   src={`${header.contentstack_logo.url}?environment=${process.env.NEXT_PUBLIC_CONTENTSTACK_ENVIRONMENT}`}
                   alt={header?.title}
                   width={220}
                   height={80}
-                  className="w-auto h-14"
+                  className="w-auto h-14 block"
                 />
               ) : (
                 <div className="w-8 h-8 bg-purple-600 rounded flex items-center justify-center">
                   <span className="text-white font-bold text-sm">C</span>
                 </div>
               )}
-            
             </Link>
           </div>
 
