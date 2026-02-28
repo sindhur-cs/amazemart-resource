@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Amazemart Resources</title>
+        <title>Ridge & Rover - Schools</title>
       </head>
       <body className="antialiased">
         <HeaderProvider>
